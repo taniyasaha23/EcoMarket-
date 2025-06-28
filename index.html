@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes site responsive -->
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>E-Commerce Organic Store</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- LOGO -->
+      <a class="navbar-brand" href="#">
+        <img src="./ImagesUsed/Logo_EcoMarket.png" alt="Logo of EcoMarket" class="img-fluid" style="max-height: 75px;"> 
+      </a>
+      <!-- Toggler Button (Hamburger for Mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapsible Links Section -->
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <!-- Nav Links -->
+        <ul class="navbar-nav m-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#trending">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#store">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- Right Aligned Search -->
+        <form class="d-flex align-items-center position-relative" role="search" style="margin-left: 20px;">
+          <input class="form-control ps-5 me-0" type="search" placeholder="Search organic products ..." aria-label="Search">
+          <i class="bi bi-search position-absolute text-muted" style="left: 15px; top: 50%; transform: translateY(-50%);"></i>
+          <button class="btn btn-success" type="submit">Search</button>
+       </form>
+      </div>
+    </div>
+  </nav>
+    
+  <!-- Hero Section -->
+  <section id="home" class="main vh-100 text-center d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Nature has always cared for us!</h1>
+        <p class="lead mt-3">Now it's our turn to choose what's natural. <br> Explore a wide range of fresh organic fruits, vegetables, and dairy products – delivered to your doorstep.</p>
+          <a href="#store" class="btn btn-success mt-4 px-4 py-2 rounded-pill">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Info Icons Section -->
+  <section class="info-icons">
+    <div class="container py-5">
+      <div class="row text-center">
+
+        <div class="col-md-4 d-flex flex-column align-items-center">
+          <img src="./ImagesUsed/Natural logo.png" class="info-icon mb-2" alt="Natural" width="80">
+          <h5 class="mt-2">100% Natural</h5>
+          <p>Fresh from the farm, untouched by chemicals.</p>
+        </div>
+
+        <div class="col-md-4 d-flex flex-column align-items-center">
+          <img src="./ImagesUsed/Organic logo.png" class="info-icon mb-2" alt="Organic" width="80">
+          <h5 class="mt-2">Certified Organic</h5>
+          <p>Grown with love, without any pesticides.</p>
+        </div>
+
+        <div class="col-md-4 d-flex flex-column align-items-center">
+          <img src="./ImagesUsed/Health Logo.png" class="info-icon mb-2" alt="Health" width="80">
+          <h5 class="mt-2">Healthy Choice</h5>
+          <p>Good for you and the planet too.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    
+  <!-- Trending Section -->
+  <section id="trending" class="trending-section container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-light">
+    <div class="container py-5">
+      <h2 class="display-4 fw-bold text-success">What's Trending</h2>
+      <p class="fs-4 mb-5 text-success">Discover the Freshest Organic Picks of the Season</p>
+    
+        <div class="row w-100 justify-content-center">
+
+          <!-- Category 1 -->
+          <div class="category-card col-6 col-md-3 d-flex flex-column align-items-center mb-4">
+            <img src="./ImagesUsed/TrendingVegetables.jpg" alt="Fresh Vegetables" class="icon-img img-fluid mb-2" style="height: 250px;">
+            <h5 class="fw-semibold">Fresh Vegetables</h5>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="category-card col-6 col-md-3 d-flex flex-column align-items-center mb-4 ">
+            <img src="./ImagesUsed/TrendingFruits.jpg" alt="Fresh Fruits" class="icon-img img-fluid mb-2" style="height: 250px;">
+            <h5 class="fw-semibold">Fresh Fruits</h5>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="category-card col-6 col-md-3 d-flex flex-column align-items-center mb-4">
+            <img src="./ImagesUsed/TrendingHealthy Milk.jpg" alt="Healthy Milk" class="icon-img img-fluid mb-2" style="height: 250px;">
+            <h5 class="fw-semibold">Healthy Milk</h5>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="category-card col-6 col-md-3 d-flex flex-column align-items-center mb-4">
+            <img src="./ImagesUsed/TrendingFrozenPacked.jpg" alt="Frozen Produce" class="icon-img img-fluid mb-2" style="height: 250px;">
+            <h5 class="fw-semibold">Frozen Fruits & Veggies</h5>
+          </div>
+
+        </div>
+      <a href="#store" class="btn btn-success mt-4 mb-3 px-4 py-2 rounded-pill">Explore More</a>
+    </div>  
+  </section>
+
+
+<!-- About Us Section -->
+  <section id="about-us" class="about-us-section container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-light">
+    <div class="container py-5">
+      <h2 class="display-4 text-success fw-bold mb-3">Welcome to a World of Pure Goodness</h2>
+      <p class="fs-5 text-success mb-5">Stay Healthy with the Goodness of Nature</p>
+      
+      <div class="row justify-content-center">
+
+        <!-- Category 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="category-card p-4 shadow-sm rounded  h-100">
+            <img src="./ImagesUsed/OrganicVeggies.jpg" alt="Organic Veggies" class="img-fluid mb-2" style="height: 250px;">
+            <h5 class="fw-semibold text-success mb-3">Best Quality Organic Veggies</h5>
+            <p class="text-muted">Handpicked from trusted farms, our vegetables are 100% organic, rich in nutrients, and free from harmful chemicals. Enjoy the real taste of nature!</p>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="category-card p-4 shadow-sm rounded  h-100">
+            <img src="./ImagesUsed/OrganicFruits.jpg" alt="Organic Fruits" class="img-fluid mb-2" style="height: 250px;">
+            <h5 class="fw-semibold text-success mb-3">Best Quality Organic Fruits</h5>
+            <p class="text-muted">Our fruits are fresh, juicy, and packed with natural sweetness. Sourced ethically, they’re grown without synthetic fertilizers or pesticides.</p>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="category-card p-4 shadow-sm rounded  h-100">
+            <img src="./ImagesUsed/OrganicDairyProducts.jpg" alt="Organic Dairy Products" class="img-fluid mb-2" style="height: 250px;">
+            <h5 class="fw-semibold text-success mb-3">Best Quality and Healthy Dairy Products</h5>
+            <p class="text-muted">From hormone-free milk to naturally cultured dairy, we offer pure and healthy dairy items that are safe and wholesome for the whole family.</p>
+          </div>
+        </div>
+
+      </div>
+      <a href="#store" class="btn btn-success mt-4 px-4 py-2 rounded-pill">Explore our products</a>
+    </div>
+  </section>
+
+<!-- Store Section -->
+<section id="store" class="store-section container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-light">
+  <div class="container py-5">
+    <h2 class="display-5 fw-bold text-success mb-2">Discover What’s in Store</h2>
+    <p class="fs-5 text-success section-subheading mb-5">Pick Your Favorites from Our Organic Shelves</p>
+      
+    <div class="row g-4">
+
+        <!-- Category Card 1 -->  
+        <div class="col-md-3 col-sm-6">
+          <div class="category-card p-3 shadow-sm rounded h-100">
+            <img src="./ImagesUsed/Green-Peppers.jpg" class="img-fluid mb-3 rounded" alt="Vegetable">
+            <h6 class="fw-semibold">Green-Peppers</h6>
+            <p class="text-muted small">$49.99</p>
+          </div>
+        </div>
+
+        <!-- Category Card 2 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="category-card p-3 shadow-sm rounded h-100">
+            <img src="./ImagesUsed/Tomato.jpg" class="img-fluid mb-3 rounded" alt="Vegetable">
+            <h6 class="fw-semibold">Tomato</h6>
+            <p class="text-muted small">$29.99</p>
+          </div>
+        </div>
+
+        <!-- Category Card 3 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="category-card p-3 shadow-sm rounded h-100">
+            <img src="./ImagesUsed/beans.jpg" class="img-fluid mb-3 rounded" alt="Vegetable">
+            <h6 class="fw-semibold">Beans</h6>
+            <p class="text-muted small">$39.99</p>
+          </div>
+        </div>
+
+        <!-- Category Card 4 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="category-card p-3 shadow-sm rounded h-100">
+            <img src="./ImagesUsed/Grape.jpg" class="img-fluid mb-3 rounded" alt="Fruit">
+            <h6 class="fw-semibold">Grapes</h6>
+            <p class="text-muted small">$69.99</p>
+          </div>
+        </div>
+
+        <!-- Category Card 5 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="category-card p-3 shadow-sm rounded h-100">
+            <img src="./ImagesUsed/mango.jpg" class="img-fluid mb-3 rounded" alt="Fruit"> <br><br><br><br><br>
+            <h6 class="fw-semibold">Mango</h6>
+            <p class="text-muted small">$100.00</p>
+          </div>
+        </div>
+
+        <!-- Category Card 6 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="category-card p-3 shadow-sm rounded h-100">
+            <img src="./ImagesUsed/Orange.jpg" class="img-fluid mb-3 rounded" alt="Fruit">
+            <h6 class="fw-semibold">Orange</h6>
+            <p class="text-muted small">$69.99</p>
+          </div>
+        </div>
+
+        <!-- Category Card 7 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="category-card p-3 shadow-sm rounded h-100">
+            <img src="./ImagesUsed/Pineapple.jpg" class="img-fluid mb-3 rounded" alt="Fruit">
+            <h6 class="fw-semibold">Pineapple</h6>
+            <p class="text-muted small">$59.99</p>
+          </div>
+        </div>
+
+        <!-- Category Card 8 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="category-card p-3 shadow-sm rounded h-100">
+            <img src="./ImagesUsed/Pomegranate.jpg" class="img-fluid mb-3 rounded" alt="Fruit">
+            <h6 class="fw-semibold">Pomegranate</h6>
+            <p class="text-muted small">$79.99</p>
+          </div>
+        </div>
+
+        <!-- Category Card 9 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="category-card p-3 shadow-sm rounded h-100">
+            <img src="./ImagesUsed/butter.jpg" class="img-fluid mb-3 rounded" alt="Dairy">
+            <h6 class="fw-semibold">Butter</h6>
+            <p class="text-muted small">$99.99</p>
+          </div>
+        </div>
+
+        <!-- Category Card 10 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="category-card p-3 shadow-sm rounded h-100">
+            <img src="./ImagesUsed/cheese.jpg" class="img-fluid mb-3 rounded" alt="Dairy">
+            <h6 class="fw-semibold">Cheese</h6>
+            <p class="text-muted small">$89.99</p>
+          </div>
+        </div>
+
+        <!-- Category Card 11 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="category-card p-3 shadow-sm rounded h-100"><br><br><br>
+            <img src="./ImagesUsed/milk.jpg" class="img-fluid mb-3 rounded" alt="Dairy"><br><br><br>
+            <h6 class="fw-semibold">Milk</h6>
+            <p class="text-muted small">$59.99</p>
+          </div>
+        </div>
+
+        <!-- Category Card 12 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="category-card p-3 shadow-sm rounded h-100">
+            <img src="./ImagesUsed/Paneer.jpg" class="img-fluid mb-3 rounded" alt="Vegetable">
+            <h6 class="fw-semibold">Paneer</h6>
+            <p class="text-muted small">$89.99</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Advertisement -->
+
+  <section id="ad" class="ad-section vh-100 text-center d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h1 class="display-5 fw-semibold pt-5">Unlock your potential with good nutrition.</h1>
+        <p class="lead fw-semibold">Always get good food.</p>
+        <a href="#" class="btn btn-warning fw-bold ">Explore our products</a>
+    </div>
+  </section>
+
+<!-- Contact Us -->
+  <section id="contact" class="contact-us-section vh-100 w-100 d-flex align-items-center bg-light">
+    <div class="container">
+      <h2 class="text-center text-success mb-3">Contact Us</h2>
+      <p class="text-center fs-5 text-success mb-5">Always be in touch with us</p>
+      
+      <div class="row">
+
+        <!-- Left: Form -->
+        <div class="col-md-6 mb-4">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Enter Message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success px-4">Submit</button>
+          </form>
+        </div>
+      
+        <!-- Right: Contact Info -->
+        <div class="col-md-6">
+          <div class="bg-white p-4 rounded shadow-sm">
+            <p><strong>LOCATION</strong> <br> New York 0722 First Street DC</p> <br>
+            <p><strong>PHONE</strong> <br> 03444-24359666</p> <br>
+            <p><strong>EMAIL</strong> <br><a href="mailto:taniya.saha24@gmail.com">taniya.saha24@gmail.com</a></p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <div class="text-center py-3" style="background-color: rgb(6, 81, 2);">
+    <a href="#" class="btn btn-warning btn-sm fw-semibold">Back to top</a>
+  </div> 
+
+  <!-- Copyright -->
+  <footer>
+    <div class="text-center small py-4">
+      &copy; 2025 EcoMarket by Taniya Saha. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
+
